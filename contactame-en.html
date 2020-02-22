@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Me</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+</head>
+<body>
+  <h1>My contact details</h1>
+  <p>Phone: +569 9404 2289</p>
+  <p>Mail: felipemunozri@gmail.com</p>
+  <br>
+  <hr>
+  <h3>Leave your info here</h3>
+  <!--En esta seccion se incluye un formulario.
+  El atributo action="" indica que acción se hará al enviar la información despues de llenar el formulario, en este caso al incluir el valor "mailto:..." se esta indicando que se envie la información a un correo electrónico. Además, el atributo method="post", indica que la informacion del formulario será enviada. El atributo enctype="text/plain", indica que la información que el usuario envía corresponde a texto plano, por lo que los símbolos que incluya serán legibles.
+
+  Es importante fijarse en los valores del atributo name="" en cada uno de los inputs. Estos sirven para que al enviar la información por correo se pueda identificar a qué corresponde cada uno de los datos enviado por el usuario. Así, en el input de Nombre, al ser enviada la información aparecerá al lado del nombre de la persona un texto igual al valor ingresado en el atributo name="", que indicará a qué corresponde la información recibida. Por ejemplo:
+  
+  yourName=Nombredepersona
+  -->
+  <form action="mailto:felipemunozri@gmail.com" method="post" enctype="text/plain">
+    <label for="">Name:</label>
+    <input type="text" name="yourName" id=""><br>
+    <label for="">Email:</label>
+    <input type="email" name="yourEmail" id=""><br>
+    <label for="">Message:</label><br>
+    <textarea name="yourMessage" placeholder="Write here what you like"id="" cols="30" rows="10"></textarea><br>
+    <input type="submit" value="submit">
+  </form>
+  <p><a href="index-en.html">Home</a></p>
+</body>
+</html>
